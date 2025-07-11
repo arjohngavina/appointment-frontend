@@ -20,7 +20,7 @@
         setAppointments(data);
       })
       .catch(err => console.error("Unauthorized or error:", err));
-    }, []);
+    }, [token]);
   
     return (
       <div>

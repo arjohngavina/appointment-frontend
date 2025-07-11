@@ -23,7 +23,12 @@ export default function CreateAppointment() {
     setLoading(true);
     setMessage("");
 
+// remove this line if unused
+// const response = await axios.post(...);
+
+
     try {
+      /*
       const response = await axios.post(
         "http://localhost:5000/api/appointments",
         { title, date },
@@ -37,6 +42,7 @@ export default function CreateAppointment() {
       setMessage("✅ Appointment created successfully!");
       setTitle("");
       setDate("");
+      */
     } catch (err) {
       console.error("Error creating appointment:", err);
       if (err.response && err.response.data && err.response.data.message) {
