@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import axios from "axios";
-import { useAuth } from "../AuthContext"; // Optional, fallback to localStorage works too
+import React /*, { useState } */ from "react";
+// import axios from "axios";
+// import { useAuth } from "../AuthContext"; // Optional, fallback to localStorage works too
 import styles from "../styles";
-/*
+
 export default function CreateAppointment() {
+  /*
   const { token: contextToken } = useAuth() || {};
   const token = contextToken || localStorage.getItem("idToken");
 
@@ -79,6 +80,15 @@ export default function CreateAppointment() {
       </form>
     </div>
   );
-}
+  */
 
-*/
+  // Temporary placeholder while form is disabled
+  return (
+    <div style={styles.container}>
+      <div style={styles.card}>
+        <h2 style={styles.heading}>Create Appointment</h2>
+        <p style={styles.message}>Form temporarily disabled during deployment test.</p>
+      </div>
+    </div>
+  );
+}
