@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useAuth } from "../AuthContext"; // Optional, fallback to localStorage works too
 import styles from "../styles";
-
+/*
 export default function CreateAppointment() {
   const { token: contextToken } = useAuth() || {};
   const token = contextToken || localStorage.getItem("idToken");
@@ -23,12 +23,7 @@ export default function CreateAppointment() {
     setLoading(true);
     setMessage("");
 
-// remove this line if unused
-// const response = await axios.post(...);
-
-
     try {
-      /*
       const response = await axios.post(
         "http://localhost:5000/api/appointments",
         { title, date },
@@ -42,7 +37,6 @@ export default function CreateAppointment() {
       setMessage("✅ Appointment created successfully!");
       setTitle("");
       setDate("");
-      */
     } catch (err) {
       console.error("Error creating appointment:", err);
       if (err.response && err.response.data && err.response.data.message) {
@@ -86,3 +80,5 @@ export default function CreateAppointment() {
     </div>
   );
 }
+
+*/
